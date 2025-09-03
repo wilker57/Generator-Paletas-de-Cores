@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estúdio de Paletas de Cores</title></head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+<body>
+    <div class="dark-mode-toggle-container">
+        <label for="dark-mode-toggle" class="dark-mode-label">Theme 🌙</label>
+        <input type="checkbox" id="dark-mode-toggle">
+    </div>
+    <header>
+        <h1>Estúdio de Paletas de Cores</h1>
+    </header>
+
+    <main>
+      
+        <section class="controls-section">
+            <div class="palette-controls">
+                <div class="control-group">
+                    <label for="base-color">Cor Base</label>
+                    <input type="color" id="base-color" value="#5928e5">
+                </div>
+                <div class="control-group">
+                    <label for="harmony-mode">Modo de Harmonia</label>
+                    <select id="harmony-mode">
+                        <option value="analogous">Análoga</option>
+                        <option value="monochromatic">Monocromática</option>
+                        <option value="triad">Tríade</option>
+                        <option value="complementary">Complementar</option>
+                        <option value="split-complementary">Complementar Dividida</option>
+                        <option value="square">Quadrada</option>
+                    </select>
+                </div>
+                <button id="generate-palette">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/></svg>
+                    Gerar Paleta
+                </button>
+                <button id="save-palette">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/></svg>
+                    Salvar
+                </button>
+            </div>
+        </section>
+        <section class="palettes-section">
+            <div class="color-palette" id="color-palette"></div>
+            <div id="dress-cards-container"></div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
